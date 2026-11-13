@@ -241,6 +241,7 @@ jobs:
 
   build-docker-image:
     executor: builder-executor
+    context: ghcr
     steps:
       - checkout
       - setup_remote_docker
